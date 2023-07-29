@@ -1,6 +1,5 @@
 import React from "react";
-import NoImages from "./NoImages";
-import Image from "./Image";
+import { Image, NoImages } from "./index";
 
 interface ImageData {
 	farm: number;
@@ -14,7 +13,7 @@ interface GalleryProps {
 	data: ImageData[];
 }
 
-const Gallery: React.FC<GalleryProps> = ({ data }) => {
+export const Gallery: React.FC<GalleryProps> = ({ data }) => {
 	let images;
 	let noImages;
 
@@ -35,5 +34,3 @@ const Gallery: React.FC<GalleryProps> = ({ data }) => {
 		</div>
 	);
 };
-
-export default Gallery;

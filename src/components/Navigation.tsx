@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Navigation: React.FC = () => {
+export const Navigation: React.FC = () => {
 	return (
 		<nav className="main-nav">
 			<ul>
@@ -21,5 +21,3 @@ const Navigation: React.FC = () => {
 		</nav>
 	);
 };
-
-export default Navigation;

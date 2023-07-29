@@ -1,12 +1,11 @@
 import React from "react";
-import Form from "./Form";
-import Navigation from "./Navigation";
+import { Form, Navigation } from "./index";
 
 interface HeaderProps {
 	handleSubmit: (searchInput: string) => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ handleSubmit }) => {
+export const Header: React.FC<HeaderProps> = ({ handleSubmit }) => {
 	console.log(handleSubmit);
 	return (
 		<div>
@@ -16,5 +15,3 @@ const Header: React.FC<HeaderProps> = ({ handleSubmit }) => {
 		</div>
 	);
 };
-
-export default Header;

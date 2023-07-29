@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "./Container";
+import { Container } from "./index";
 
 interface ItemProps {
 	searchTerm: string;
 }
 
-const Item: React.FC<ItemProps> = ({ searchTerm }) => {
+export const Item: React.FC<ItemProps> = ({ searchTerm }) => {
 	return (
 		<div>
 			<h2>{searchTerm} Pictures</h2>
@@ -13,5 +13,3 @@ const Item: React.FC<ItemProps> = ({ searchTerm }) => {
 		</div>
 	);
 };
-
-export default Item;
