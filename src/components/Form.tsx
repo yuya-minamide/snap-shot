@@ -4,7 +4,7 @@ interface FormProps {
 	handleSubmit: (searchInput: string) => void;
 }
 
-const Form: React.FC<FormProps> = ({ handleSubmit }) => {
+export const Form: React.FC<FormProps> = ({ handleSubmit }) => {
 	const [searchEntry, setSearchEntry] = useState("");
 
 	const updateSearchInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,5 +31,3 @@ const Form: React.FC<FormProps> = ({ handleSubmit }) => {
 		</form>
 	);
 };
-
-export default Form;

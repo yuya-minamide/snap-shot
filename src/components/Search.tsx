@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "./Container";
+import { Container } from "./index";
 import { useParams } from "react-router-dom";
 
-const Search: React.FC = () => {
+export const Search: React.FC = () => {
 	const { searchInput } = useParams<{ searchInput: string }>();
 
 	return (
@@ -18,5 +18,3 @@ const Search: React.FC = () => {
 		</div>
 	);
 };
-
-export default Search;

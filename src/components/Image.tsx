@@ -6,7 +6,7 @@ interface ImageProps {
 	title: string;
 }
 
-const Image: React.FC<ImageProps> = ({ url, title }) => {
+export const Image: React.FC<ImageProps> = ({ url, title }) => {
 	const handleDownload = async () => {
 		try {
 			const response = await fetch(url);
@@ -37,5 +37,3 @@ const Image: React.FC<ImageProps> = ({ url, title }) => {
 		</li>
 	);
 };
-
-export default Image;

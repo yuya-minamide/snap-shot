@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import PhotoContextProvider from "./context/PhotoContext";
-import Header from "./components/Header";
-import Item from "./components/Item";
-import Search from "./components/Search";
-import NotFound from "./components/NotFound";
+import { Header, Item, NotFound, Search } from "./components";
 
 class App extends Component {
 	handleSubmit = (searchInput: string) => {
